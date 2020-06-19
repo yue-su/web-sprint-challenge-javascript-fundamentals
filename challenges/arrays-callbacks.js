@@ -24,15 +24,16 @@ displayNames will be an array of strings, and each string should follow this pat
 */
 const displayNames = []
 zooAnimals.forEach((item) => displayNames.push(`Name: ${item.animal_name}, Scientific: ${item.scientific_name}.`))
-console.log(displayNames);
+console.log(displayNames)
 
 /* Request 2: .map()
 
-The zoos need a list of all their animal's names (animal_name only) converted to lower case. Using map, create a new array of strings named lowCaseAnimalNames, each string following this pattern: "jackal, asiatic". Log the resut.
+The zoos need a list of all their animal's names (animal_name only) converted to lower case. 
+Using map, create a new array of strings named lowCaseAnimalNames, each string following this pattern: "jackal, asiatic". Log the resut.
 
 */
 
-const lowCaseAnimalNames = [];
+const lowCaseAnimalNames = zooAnimals.map((item) => item.animal_name.toLowerCase())
 console.log(lowCaseAnimalNames);
 
 /* Request 3: .filter() 
