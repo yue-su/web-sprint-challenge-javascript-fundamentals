@@ -20,7 +20,7 @@ myFunction();
 /*
 
 The nestedFunction() can access the variable internal because the variable is declared in the function's parent scope. 
-A nested function can access all of its parent function's variables but not vice versa.
+A nested function can access all of its upper level function's variables but not vice versa.
 
 */
 
